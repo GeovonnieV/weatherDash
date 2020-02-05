@@ -1,0 +1,22 @@
+#mainDiv{
+    padding: 80px;
+    background:blue;
+    color: white;
+    width: 1100px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+header{
+    font-size: 60px;
+    /* padding: 80px; */
+    background-color: gray;
+    color: white;
+    text-align: center;
+    
+}
+
+#inputDiv{
+    margin-top: 50px;
+}
