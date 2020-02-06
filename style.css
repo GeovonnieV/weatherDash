@@ -1,22 +1,51 @@
 #mainDiv{
     padding: 80px;
-    background:blue;
+    background-image: url(https://i.pinimg.com/736x/7f/63/1e/7f631e577ed5e5ffbbce726f8ec03489.jpg);
     color: white;
     width: 1100px;
     margin: auto;
     text-align: center;
     margin-top: 50px;
+   
 }
 
 header{
     font-size: 60px;
     /* padding: 80px; */
-    background-color: gray;
+    background-color: black;
     color: white;
     text-align: center;
-    
+    font-family: 'Zhi Mang Xing', cursive;
 }
 
 #inputDiv{
     margin-top: 50px;
+}
+
+#weather-form{
+    background-image: url(https://i.pinimg.com/736x/7f/63/1e/7f631e577ed5e5ffbbce726f8ec03489.jpg);
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+body{
+    background-image: url(https://cdn2.vectorstock.com/i/1000x1000/77/16/weather-background-icon-vector-87716.jpg);
+}
+
+#find-city:hover{
+background: greenyellow;
+color: black;
+    
+}
+
+#city-input{
+    background: black;
+    color: white;
+}
+
+#find-city{
+    background: black;
+    color: white;
 }

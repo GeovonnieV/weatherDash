@@ -46,12 +46,12 @@ $(document).ready(function (){
 
 
             var uvUrl = 'http://api.openweathermap.org/data/2.5/uvi?appid='
-           // {lat}&lon={lon}
+           
             var lat = results.coord.lat
             
             var lon = results.coord.lon
             
-
+            //uv indez ajax
             $.ajax({
                 url: uvUrl + apikey + '&lat=' + lat + '&lon=' + lon,
                 method: 'GET'
@@ -62,11 +62,33 @@ $(document).ready(function (){
                 var uvIndex = hey.value
                 console.log(uvIndex)
                 $('#uvDiv').text('UV index ' + uvIndex)
-                // end 2nd ajax .then
+                // end uv index ajax
             })
 
-            // end 1st ajax .then
+            //5 day ajax
 
+            var forcastUrl = 'api.openweathermap.org/data/2.5/forecast/daily?lat='
+            var count = '5'
+            //{lat}&lon={lon}&cnt={cnt}
+
+            $.ajax({
+                url: forcastUrl + lat + '&lon=' + lon + '&cnt=' + count,
+                method: 'GET'
+
+            }).then(function (request){
+                
+                console.log(request)
+                
+                
+                //end 5 day ajax
+            })
+
+
+
+
+
+            
+            // end 1st ajax .then
         })
     
     
