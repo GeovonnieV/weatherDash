@@ -19,25 +19,46 @@
   <div class="temp"></div>
   <div id="windSpeedDiv"></div>
   <div id="humidDiv"></div>
+  <div id="uvDiv"></div>
   
 <!-- end mainDiv -->
 </div>
 
-<div id="inputDiv">
-<h1>search for a city</h1>
-<input>
-<button>search</button>
-<div id="lsDiv">
+<form id="weather-form">
+  <label for="city-input">Search for a city</label>
+  <input type="text" id="city-input"><br>
 
+  <!-- This button will trigger our AJAX call -->
+  <input id="find-city" type="submit" value="city Search">
+</form>
 
-<!-- end lsDiv -->
-</div>
-  <!-- end inputDiv -->
-</div>
 
 <div id="forcastDiv">
-<div>day 1</div>
-<div>day 2</div>
+<div class="row">
+  <!-- 1st col -->
+<div class="col-md-2">
+
+</div>
+<!-- 2nd -->
+<div class="col-md-2" >
+
+</div>
+<!-- 3rd -->
+<div class="col-md-2">
+
+</div>
+<!-- 4th -->
+<div class="col-md-2">
+
+</div>
+<!-- 5th -->
+<div class="col-md-2">
+
+</div>
+
+
+  <!-- end row -->
+</div>
 
   <!-- end forcastDiv -->
 </div>
@@ -45,6 +66,7 @@
  
   <!-- links -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
