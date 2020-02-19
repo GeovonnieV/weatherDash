@@ -45,7 +45,7 @@ $(document).ready(function (){
             
 
 
-            var uvUrl = 'http://api.openweathermap.org/data/2.5/uvi?appid='
+            var uvUrl = 'https://api.openweathermap.org/data/2.5/uvi?appid='
            
             var lat = results.coord.lat
             
